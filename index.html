@@ -5,71 +5,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-<!-- informacion sobre color en la pantalla/
-  breakpoint, color segun ancho de pixeles, 
-para jugar con los tamaños. --> 
-
-<style media="screen">
-
-@media (min-width: 100px) {
-  body { 
-     background: #999999;
-
-
-  }
-}
-
-
-@media (min-width: 576px) {
-  body { 
-     background: red;
-
-
-  }
-}
-
-@media (min-width: 772px) {
-  body { 
-     background: blue;
-
-
-  }
-}
-
-@media (min-width: 992px) {
-  body { 
-     background: green;
-
-
-  }
-}
-
-@media (min-width: 1200px) {
-  body { 
-     background: yellow;
-
-
-  }
-}
-
-</style>
-
-
-</head> 
+    <script src="https://kit.fontawesome.com/eb2d618c76.js" crossorigin="anonymous"></script></head>
+<!--tipos de colores en botones  --> 
 <body>
+<!-- COMANDO btn-group btn-group-vertical
+es para dejar en vertical los botones selecionados
+class="btn-group-vertical> -->
+
+<div class="btn-group-vertical"> 
+<button   class="btn btn-danger">danger</button>
+<button class="btn btn-primary">primary</button>
+  <button class="btn btn-secondary">secundary</button>
+    <button class="btn btn-danger">danger</button>
+    <button class="btn btn-dark">dark</button>
+    <button class="btn btn-warning">warning</button>
+    <button class="btn btn-white">white</button>
+    <button class="btn btn-light">light</button>
+    <button class="btn btn-link">www.google.cl</button>
+    <button class="btn btn-success">success</button>
+<a class="btn btn-outline-primary" href="http://www.google.cl">ENLACE2</a>
+</div>
+<hr>    
+<!-- enlace que simula ser un button, pero util para 
+aplicaciones pq sirve como enlace tbn. a diferencia 
+de button y lo simplifica todo-->
+<a class="btn btn-success " href="http://www.google.cl">ENLACE</a> 
+
+<!-- botones-->
+<hr>
+<!-- tipos de botones varios disponibles para usar-->
+<a class="btn btn-dark"  href="http://www.google.cl">ENLACE</a> 
+<hr>
+<button type="submit"  class="btn btn-primary">Enviar</button>
+<input type="button"  class="btn btn-danger" value="aceptar">
+<input type="reset" class="btn btn-link" value="Link">
+
+<!-- tipos de botones blanco, cuando paso el mouse
+se resaltan, -->
+
+<hr>
+<button class="btn btn-outline-primary"> BOTON </button>
+<button class="btn btn-outline-dark"> BOTON </button>
+<button class="btn btn-outline-success"> BOTON </button>
+<button class="btn btn-outline-danger"> BOTON </button>
+<button class="btn btn-outline-light"> BOTON </button>
+<hr>
+<!--tamaños de botones longe-small-xl-->
+<button class="btn btn-primary btn-lg"> NORMAL</button>
+
+<button class="btn btn-primary btn-sm"> NORMAL</button>
+<button class="btn btn-primary btn-xl"> NORMAL</button>
+<hr>
+<button class="btn btn-primary btn-md btn-block"> NORMAL</button>
+
+<hr>
+<!-- iconos de fuentes para los botones 
+www.fontawesome.io
+variedad de fuentes didacticas.-->
+<button class="btn btn-primary btn-lg"> <i class="fa fa-world"></i> NORMAL</button>
+<button class="btn btn-primary btn-lg"> <i class="fab fa-apple-pay"></i> Apple buy</button>
+<button class="btn btn-primary btn-lg"> <i class="fas fa-battery-quarter"></i> BATERIA BAJA</button>
+
+
+<hr>  
+<!-- hacer marcado los botones, oscuros y mas claros, 
+-->
+<button class="btn btn-dark active"> hola </button>
+<button class="btn btn-primary disabled"> hola </button>
+<button class="btn btn-dark"  data-toggle="button"> PRUEBA</button>
+
+
+<hr>
+<!-- muy util menu dropdown, boton con varios submenus util para 
+comentar informacion en una mismo lugar
+dropdown-toggle es para reflejar un icono de sub menu.-->
+<div class="dropdown">
+  <button class="btn- btn-danger drop dropdown-toggle" data-toggle="dropdown"> ELEGIR </button>
+<div class="dropdown-menu">
+<a href="http://www.google.cl" clasS="dropdown-item">UNO </a>
+<a href="http://www.google.cl" clasS="dropdown-item">DOS </a>
+<a href="http://www.google.cl" clasS="dropdown-item">tres </a>
+</div>
+
+</div>
+
+
+<hr>
+
+<!-- agrupacion de los botones con color
+--><!--funcion para agregar botones btn-boton grupos
+de links para mostrar -->
+<div class="btn-group">
+<button class="btn btn-dark">EL BOTON</button>
+<button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+<!-- -->
+MENU PARA ABAJO
+</button>
+<!--menu al hacer click en la palabra sub menu tbn 
+poniendole color a las opciones -->
+<div class="dropdown-menu">
+
+<a href="http://www.google.cl" class="dropdown-item btn btn-success active">UNO </a>
+<a href="http://www.google.cl" clasS="dropdown-item btn btn-primary active">DOS </a>
+<a href="http://www.google.cl" clasS="dropdown-item btn btn-danger active"> tres </a>
+</div>
+
+
+</div>
+
+<hr>
+<div class="btn-group"> 
+
+<button class="btn btn-dark"> IZquierda</button>
+<button class="btn btn-dark"> Derecha</button>
+<button class="btn btn-dark">Centro </button>
+
+</div>
+
+<div class=" btn btn-toolbar" role="toolbar">
+<div class="btn-group mr-3">
+
+<button class="btn btn-dark"> 1</button>
+<button class="btn btn-dark">2</button>
+<button class="btn btn-dark">3 </button>
+</div>
+
+<div class="btn-group mr-2">
+
+  <button class="btn btn-dark"> 5</button>
+  <button class="btn btn-dark">6</button>
+  <button class="btn btn-dark">7 </button>
+  
+
+</div>
+
+<button class="btn btn-dark">8 </button>
+
+</div>
+<hr>
+<div class="btn-group btn-group-vertical">
+  <button class="btn btn-dark"> IZquierda</button>
+  <button class="btn btn-secondary"> Derecha</button>
+  <button class="btn btn-dark">Centro </button>  
 
 
 
-
-
-
-
-
-
-
-
+</div>
 
 
 
