@@ -39,7 +39,7 @@
   <a href="https://www.google.com" class="list-group-item list-group-item-danger"> Pagina 1</a>
   <a href="https://www.google.com" class="list-group-item list-group-item-warning"> Pagina 1</a>
  <a href="https://www.google.com" class="list-group-item list-group-item-success"> Pagina 1</a>
- <a href="https://www.google.com" class="list-group-item list-group-item-success"> Pagina 1</a>
+ <a href="https://www.google.com" class="list-group-item list-group-item-info"> Pagina 1</a>
 
 
 </ul>
@@ -50,15 +50,45 @@
   <hr>
 <ul class="list-group">
 
-<a href="x" class="list-group-item"> Comentarios <span class="badge badge-primary">14</span></a>
+<a href="x" class="list-group-item"> Comentarios <span class="badge badge-danger">14</span></a>
 <a href="x" class="list-group-item"> Comentarios <span class="badge badge-primary badge-pill">22</span></a>
 
-
-
+<!-- sirve para dejar la cantidad de comentarios hacia el lado derecho-->
+<a href="x" class="list-group-item d-flex justify-content-between align-items-"> Comentarios <span class="badge badge-primary badge-pill">33</span></a>
 
 </ul>
   
+<!-- texto visualizado con comentarios ennumerados ajustado 
+-->
 
+<div class="list-group">
+<a href="#" class="list-group-item list-group-item-action flex-column align-items-star active">Principal
+<div class="d-flex w-100 justify-content-between" >
+
+  <h5 class="mb-1"> Entrada</h5>
+  <small>3 day a go</small>
+</div>
+<p class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cumque rerum error labore reiciendis. At minima harum voluptas, et repellendus necessitatibus commodi ullam dicta praesentium soluta vel officiis quas asperiores. </p>
+</a>
+</div>
+
+<!-- ennumerado de items para agregar link
+-->
+
+<ol class="breadcrumb">
+<li class="breadcrumb-item"> Item</li>
+<li class="breadcrumb-item active"> Item</li>
+</ol>
+
+<!-- texto continuado, lineal con opcion de realizar link-->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"> 
+<a href="https://www.google.cl"> ITEM</a>
+
+  </li>
+  <li class="breadcrumb-item "> </li>
+  <a href="https://www.google.cl"> ITEM</a></li>
+  </ol>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
